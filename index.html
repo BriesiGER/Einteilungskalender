@@ -58,8 +58,18 @@
   .legend-note{margin-top:10px;color:var(--muted);font-size:11.5px;line-height:1.6}
   .legend-note b{color:var(--ink)}
   footer{margin-top:14px;color:var(--muted);font-size:11.5px}
-  @media (max-width:480px){body{padding:14px}
-    .grid{grid-template-columns:20px repeat(7,1fr) minmax(96px,1.3fr)}}
+  @media (max-width:560px){
+    body{padding:12px}
+    .year{margin-top:18px}
+    .months{grid-template-columns:1fr;gap:12px}
+    .month{padding:10px 10px 12px}
+    .grid{grid-template-columns:24px repeat(7,1fr);gap:4px 3px}
+    .lbl-head{display:none}
+    .lbl{grid-column:1 / -1;justify-content:flex-start;padding:1px 0 5px 27px;min-height:0}
+    .day{height:30px;line-height:30px;font-size:13px}
+    .wd,.kw,.kw-head{font-size:12px}
+    .pill{font-size:12px;padding:3px 11px}
+  }
 </style></head>
 <body>
   <header><h1>Einteilungskalender 2026 / 2027</h1>
